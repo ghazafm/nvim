@@ -58,14 +58,10 @@ require("lazy").setup({
 	performance = {
 		cache = {
 			enabled = true,
-			-- disable_events = {},
 		},
 		rtp = {
-			-- disable some rtp plugins
 			disabled_plugins = {
 				"gzip",
-				-- "matchit",
-				-- "matchparen",
 				"netrwPlugin",
 				"rplugin",
 				"tarPlugin",
@@ -75,12 +71,4 @@ require("lazy").setup({
 			},
 		},
 	},
-	ui = {
-		custom_keys = {
-			["<localleader>d"] = function(plugin)
-				dd(plugin)
-			end,
-		},
-	},
-	debug = false,
 })
